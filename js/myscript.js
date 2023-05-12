@@ -7,8 +7,6 @@ document.getElementById('YourAge').innerHTML = PassengerAge;
 const KmToDo = prompt('Quanti km vuoi percorrere?');
 document.getElementById('YourKm').innerHTML = KmToDo;
 
-const underageDiscount = ('20%');
-
 const FullTicket = parseInt(0.21 * KmToDo);
 document.getElementById('fullPrice').innerHTML = FullTicket;
 
@@ -20,7 +18,7 @@ if (PassengerAge < 18){
 }  
 
 else if (PassengerAge > 65){
-    const DiscountTiket = (65 / 100) * FullTicket;
+    const DiscountTiket = (40 / 100) * FullTicket;
     document.getElementById('majorDiscount').innerHTML = DiscountTiket;
 }
 
