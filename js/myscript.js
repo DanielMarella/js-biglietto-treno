@@ -15,10 +15,13 @@ if (PassengerAge < 18){
 
     const DiscountTiket = (20 / 100) * FullTicket;
     document.getElementById('minorDiscount').innerHTML = DiscountTiket.toFixed(2) + '€';
+    document.getElementById('FinalPrice').innerHTML = FullTicket - DiscountTiket.toFixed(2) + '€';
 }  
 
 else if (PassengerAge > 65){
     const DiscountTiket = (40 / 100) * FullTicket;
     document.getElementById('majorDiscount').innerHTML = DiscountTiket.toFixed(2) + '€';
+    document.getElementById('FinalPrice').innerHTML = FullTicket - DiscountTiket.toFixed(2) + '€';
+
 }
 
