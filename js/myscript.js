@@ -15,7 +15,7 @@ document.getElementById('fullPrice').innerHTML = FullTicket;
 const DiscountTiket = FullTicket ;
 if (PassengerAge < 18){
 
-    const DiscountTiket = (parseInt(underageDiscount / 100) * FullTicket);
+    const DiscountTiket = (20 / 100) * FullTicket;
     document.getElementById('minorDiscount').innerHTML = DiscountTiket;
 }  
 
